@@ -87,7 +87,7 @@
 #define ADC1_ZERO     978        // ADC1-value while poti at zero-position (0 - 4095)
 #define ADC1_MAX      3150        // max ADC1-value while poti at maximum-position (0 - 4095)
 #define ADC1_MULT_NEG  500.0f     // Use 1000.0f to calibrate form MIN to MAX
-#define ADC1_MULT_POS 1500.0f     // Use 1000.0f to calibrate form MIN to MAX
+#define ADC1_MULT_POS 500.0f     // Use 1000.0f to calibrate form MIN to MAX
 
 #define ADC2_MIN         0        // min ADC2-value while poti at minimum-position (0 - 4095)
 #define ADC2_ZERO     2000        // ADC2-value while poti at zero-position (0 - 4095)
