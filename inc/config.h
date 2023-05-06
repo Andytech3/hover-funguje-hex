@@ -84,8 +84,8 @@
 // ADC-calibration to cover the full poti-range: connect potis to left sensor board cable (0 to 3.3V) (do NOT use the red 15V wire in the cable!). see <How to calibrate>. turn the potis to minimum position, write value 1 to ADC1_MIN and value 2 to ADC2_MIN. turn to maximum position and repeat it for ADC?_MAX. make, flash and test it.
 #define CONTROL_ADC               // use ADC as input. disable DEBUG_SERIAL_USART2!
 #define ADC1_MIN         0        // min ADC1-value while poti at minimum-position (0 - 4095)
-#define ADC1_ZERO     1500        // ADC1-value while poti at zero-position (0 - 4095)
-#define ADC1_MAX      4095        // max ADC1-value while poti at maximum-position (0 - 4095)
+#define ADC1_ZERO     978        // ADC1-value while poti at zero-position (0 - 4095)
+#define ADC1_MAX      3150        // max ADC1-value while poti at maximum-position (0 - 4095)
 #define ADC1_MULT_NEG  500.0f     // Use 1000.0f to calibrate form MIN to MAX
 #define ADC1_MULT_POS 1500.0f     // Use 1000.0f to calibrate form MIN to MAX
 
@@ -96,7 +96,7 @@
 #define ADC2_MULT_POS  300.0f     // Use 1000.0f to calibrate form MIN to MAX
 
 #define ADC_OFF_START    0          // Start Value of Area at which other inputs can be active (0 - 4095) Applies to Speed ADC
-#define ADC_OFF_END   1000          // End Value of Area at which other inputs can be active (0 - 4095) Applies to Speed ADC
+#define ADC_OFF_END   1200          // End Value of Area at which other inputs can be active (0 - 4095) Applies to Speed ADC
 #define ADC_SWITCH_CHANNELS         // define if ADC1 is used for Steer and ADC2 for Speed
 #define ADC_REVERSE_STEER           // define if ADC1 is used for Steer and ADC2 for Speed
 
